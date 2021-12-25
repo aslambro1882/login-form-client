@@ -88,7 +88,7 @@ const useFirebase = () => {
             getIdToken(currentUser).then(idToken => {
                 console.log('hello', idToken);
                 setToken(idToken)
-                fetch('https://git.heroku.com/user-login-form-backend.git/users', {
+                fetch('https://limitless-cove-71325.herokuapp.com/users', {
                     method: method, /* <== This is POST method */
                     headers: {
                         'authorization': `Bearer ${idToken}`,
